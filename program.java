@@ -21,10 +21,22 @@ import java.util.Scanner;
 
         }
     }
+     class Textbook extends Book {
+        String edtion;
+    public Textbook(String author, int no , String Title, String edtion){
+        super( author,no,Title);
+             this.edtion=edtion;
+            
+    }
+        
+    }
      class program {
     public static void main(String[] args) {
         Person p=new Person("Jeff Kiney",217,"Diary of a Wimpy Kid");
+
         p.display();
+        Textbook t=new Textbook("Enid Blyton", 312, "The ultimate Science Guide Textbook", "Latest");
+        t.display();
     }
         
     }
